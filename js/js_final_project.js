@@ -21,7 +21,7 @@ askClick = 0;
 showClick = 0;
 //Create and Select random Ball File
 function randomBall() {
-  const mypath = "/11day/img/";
+  const mypath = "img/";
   let myfile = getRandomFile();
   const myext = ".png";
   myBall = mypath + myfile + myext;
@@ -31,7 +31,7 @@ function randomBall() {
 // Called from Ask Me Anything Button
 function myInput() {
   if (askClick === 0) {
-    myBall = "/11day/img/1.png";
+    myBall = "img/1.png";
     const ball = document.createElement("img");
     ball.src = myBall;
     document.getElementById("answers").appendChild(ball);
