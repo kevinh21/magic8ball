@@ -45,6 +45,8 @@ function myInput() {
     input.setAttribute("value", "Enter question here");
     input.setAttribute("onfocus", "this.value=''");
     document.getElementById("inputText").appendChild(input);
+    const askMe = document.getElementById("askMe")
+    askMe.style.display = "none";
     askClick = 1;
     return 0;
   }
